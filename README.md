@@ -67,6 +67,40 @@ Ver [resumen de evidencias](informes/RESUMEN_RESULTADOS.md). Estas cifras fueron
 ### Limitaciones y honestidad de la evidencia
 **La licencia FortiGate-VM figura `Invalid`.** Aunque el CLI admitió la configuración de la política y el hardening administrativo, no se puede afirmar que la política de filtrado esté funcionando. La evaluación de `strong-crypto` quedó **NO VERIFICADO**. Los dispositivos Cisco usan IOS 12.4 en un entorno de laboratorio y el cliente SSH precisó algoritmos antiguos por compatibilidad; **no reutilizarlos en producción**.
 
+
+## Galería de capturas reales del laboratorio
+> Las imágenes provienen de las consolas y pruebas realizadas. **Pendiente: transferir los archivos PNG a la carpeta `imagenes/` de este repositorio.** Si aún no se ven, descargue el ZIP de capturas preparado y súbalas conservando los nombres.
+
+### Topología y administración
+![Topología real GNS3](imagenes/topologia.png)
+![Estado de interfaces y SSH de R1](imagenes/R1_interfaces_ssh_rutas.png)
+![Estado SSH de SW1](imagenes/SW1_ssh.png)
+![Interfaces del FortiGate](imagenes/FG1_interfaces.png)
+![Política de red protegida](imagenes/FG1_politica.png)
+
+### Auditoría inicial
+![R1 antes](imagenes/auditoria_inicial_R1.png)
+![SW1 antes](imagenes/auditoria_inicial_SW1.png)
+![FG1 antes](imagenes/auditoria_inicial_FG1.png)
+
+### Aplicación automatizada
+![Hardening aplicado R1](imagenes/hardening_automatico_R1.png)
+![Hardening aplicado SW1](imagenes/hardening_automatico_SW1.png)
+![Hardening aplicado FG1](imagenes/hardening_automatico_FG1.png)
+
+### Auditoría final
+![Auditoría final R1](imagenes/auditoria_final_R1.png)
+![Auditoría final SW1](imagenes/auditoria_final_SW1.png)
+![Auditoría final FG1](imagenes/auditoria_final_FG1.png)
+![Informes generados](imagenes/informes_generados.png)
+
+### Verificación de conectividad
+![PC1 y dispositivos](imagenes/PC1_pings_LAN.png)
+![Ubuntu dispositivos LAN](imagenes/Ubuntu_pings_LAN.png)
+![PC2 a FortiGate](imagenes/PC2_ping_FG1.png)
+![FortiGate a PC2](imagenes/FG1_ping_PC2.png)
+![Limitación interredes](imagenes/Ubuntu_ruta_y_fallo_PC2.png)
+
 ## Estructura de documentación
 - `scripts/` — códigos de auditoría de solo lectura y aplicación automatizada.
 - `informes/` — resumen contrastado, y espacio para los informes reales obtenidos en Ubuntu.
