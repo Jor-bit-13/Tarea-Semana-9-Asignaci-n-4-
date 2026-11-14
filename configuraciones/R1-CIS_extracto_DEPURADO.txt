@@ -1,0 +1,44 @@
+# R1-CIS — EXTRACTO depurado del running-config visible en las capturas
+# No es una exportación completa byte a byte. El archivo completo debe exportarse desde R1 y eliminar todos los secretos antes de publicar.
+version 12.4
+hostname R1-CIS
+no ip domain lookup
+ip domain name cis-lab.local
+!
+! enable secret 5 [HASH SUPRIMIDO]
+! username adminlab privilege 15 secret 5 [HASH SUPRIMIDO]
+!
+ip ssh time-out 60
+ip ssh version 2
+!
+interface FastEthernet0/0
+ description LAN-CIS-HACIA-SW1
+ ip address 10.7.63.1 255.255.255.0
+ duplex auto
+ speed auto
+!
+interface FastEthernet0/1
+ description HACIA-R2
+ ip address 200.7.63.5 255.255.255.252
+ duplex auto
+ speed auto
+!
+ip route 10.7.66.0 255.255.255.0 10.7.63.3
+no ip http server
+no ip http secure-server
+!
+line con 0
+ exec-timeout 0 0
+ privilege level 15
+ logging synchronous
+ login local
+line aux 0
+ exec-timeout 0 0
+ privilege level 15
+ logging synchronous
+ login local
+line vty 0 4
+ login local
+ transport input ssh
+!
+end
