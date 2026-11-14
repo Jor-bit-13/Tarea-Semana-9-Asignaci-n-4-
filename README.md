@@ -113,11 +113,6 @@ Ver [resumen de evidencias](informes/RESUMEN_RESULTADOS.md). Estas cifras fueron
 - `documentacion/` — metodología, pruebas y pendientes de evidencia.
 - `entrega/` — indicaciones para el TXT final y el enlace del video.
 
-## Fuentes de referencia
-- [CIS Benchmarks](https://www.cisecurity.org/cis-benchmarks)
-- [CIS para Cisco](https://www.cisecurity.org/benchmark/cisco) (IOS 12.4, consultar versión archivada pertinente)
-- [CIS FortiGate 7.4.x](https://www.cisecurity.org/benchmark/fortinet)
-- [Fortinet — referencia CLI system global 7.4.x](https://docs.fortinet.com/document/fortigate/7.4.8/cli-reference/339914554/config-system-global)
 
 > **Seguridad al publicar:** nunca subir contraseñas, hashes tipo 5, llaves privadas, tokens ni configuraciones sensibles sin depurar. Se incluyen notas sobre qué artefactos todavía deben exportarse directamente desde Ubuntu o los equipos.
 
