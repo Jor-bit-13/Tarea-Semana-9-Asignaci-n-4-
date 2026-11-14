@@ -1,0 +1,44 @@
+# FG1-CIS — configuración documentada mediante consultas CLI
+# Extracto DEPURADO, no exportación integral del equipo
+# FortiOS 7.4.13 build 2933 — estado de licencia observado: Invalid
+config system interface
+    edit "port1"
+        set vdom "root"
+        set ip 10.7.63.3 255.255.255.0
+        set allowaccess ping https ssh
+        set type physical
+        set alias "RED-LAN-CIS"
+    next
+    edit "port2"
+        set vdom "root"
+        set ip 10.7.66.1 255.255.255.0
+        set allowaccess ping
+        set type physical
+        set alias "RED-PROTEGIDA"
+    next
+end
+
+config system global
+    set admintimeout 5
+    set admin-lockout-threshold 3
+    set admin-lockout-duration 300
+    set admin-telnet disable
+    set admin-ssh-v1 disable
+end
+
+config firewall policy
+    edit 1
+        set name "AUDITOR-HACIA-RED-PROTEGIDA"
+        set srcintf "port1"
+        set dstintf "port2"
+        set action accept
+        set srcaddr "UBUNTU-AUDITOR"
+        set dstaddr "PC2-PROTEGIDO"
+        set schedule "always"
+        set service "PING"
+        set logtraffic all
+    next
+end
+
+# strong-crypto: no verificado.
+# Las reglas aparecen configuradas, pero la licencia invalid no permitió confirmar el filtrado extremo a extremo.
