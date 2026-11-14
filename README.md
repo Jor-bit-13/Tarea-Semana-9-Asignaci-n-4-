@@ -1,6 +1,9 @@
 # 🎥 Video demostrativo
-**YouTube:** [](https://youtu.be/YNStO33xZAQ).
-]
+
+[▶ Ver demostración del laboratorio en YouTube](https://youtu.be/YNStO33xZAQ)
+
+**Video:** https://youtu.be/YNStO33xZAQ
+
 # Asignación 4 · Semana 9 — Auditoría y hardening de red basado en CIS Benchmark
 
 **Institución:** ITLA · **Modalidad:** Individual · **Laboratorio:** GNS3, Ubuntu Server, Cisco IOS 12.4 y FortiOS 7.4.13.
@@ -104,7 +107,7 @@ Ver [resumen de evidencias](informes/RESUMEN_RESULTADOS.md). Estas cifras fueron
 ## Estructura de documentación
 - `scripts/` — códigos de auditoría de solo lectura y aplicación automatizada.
 - `informes/` — resumen contrastado, y espacio para los informes reales obtenidos en Ubuntu.
-- `configuraciones/` — capturas/archivos de configuración **depurados** sin contraseñas ni hashes.
+- `configuraciones/` — extractos reconstruidos y depurados a partir de capturas. **Pendiente agregar los running-config completos exportados de cada equipo** sin secretos ni hashes.
 - `imagenes/` — capturas de topología, SSH, auditorías, pruebas y hardening.
 - `diagramas/` — diagrama SVG editable/visualizable.
 - `documentacion/` — metodología, pruebas y pendientes de evidencia.
