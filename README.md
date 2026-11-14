@@ -83,3 +83,16 @@ Ver [resumen de evidencias](informes/RESUMEN_RESULTADOS.md). Estas cifras fueron
 - [Fortinet — referencia CLI system global 7.4.x](https://docs.fortinet.com/document/fortigate/7.4.8/cli-reference/339914554/config-system-global)
 
 > **Seguridad al publicar:** nunca subir contraseñas, hashes tipo 5, llaves privadas, tokens ni configuraciones sensibles sin depurar. Se incluyen notas sobre qué artefactos todavía deben exportarse directamente desde Ubuntu o los equipos.
+
+## Galería de evidencias reales
+> Las imágenes se mostrarán después de subir los PNG a `imagenes/`. [Ver índice completo de capturas](imagenes/README.md).
+
+![Topología real de GNS3](imagenes/topologia.png)
+
+| Auditoría inicial | Auditoría posterior |
+|---|---|
+| ![R1 antes](imagenes/auditoria_inicial_R1.png) | ![R1 después](imagenes/auditoria_final_R1.png) |
+| ![SW1 antes](imagenes/auditoria_inicial_SW1.png) | ![SW1 después](imagenes/auditoria_final_SW1.png) |
+| ![FG1 antes](imagenes/auditoria_inicial_FG1.png) | ![FG1 después](imagenes/auditoria_final_FG1.png) |
+
+**Prueba de aplicación:** [R1](imagenes/hardening_automatico_R1.png) · [SW1](imagenes/hardening_automatico_SW1.png) · [FG1](imagenes/hardening_automatico_FG1.png).
