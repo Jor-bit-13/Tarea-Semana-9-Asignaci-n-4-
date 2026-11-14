@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1150" height="650" viewBox="0 0 1150 650" role="img" aria-label="Topología de laboratorio CIS con router, switch, FortiGate, Ubuntu y PCs">
+<rect width="1150" height="650" rx="18" fill="#101827"/>
+<text x="575" y="42" font-family="Arial,sans-serif" font-size="26" font-weight="bold" fill="#f3f6fb" text-anchor="middle">LABORATORIO CIS — TOPOLOGÍA GNS3</text>
+<g stroke="#8da7c9" stroke-width="3" fill="none">
+<path d="M440 128 V202"/><path d="M440 250 H760"/><path d="M400 250 L225 415"/><path d="M440 250 L480 415"/><path d="M805 298 V415"/><path d="M205 465 L130 545"/>
+</g>
+<g fill="#162b45" stroke="#4aa5e9" stroke-width="2">
+<rect x="336" y="67" width="208" height="61" rx="10"/><rect x="336" y="202" width="208" height="62" rx="10"/><rect x="705" y="222" width="200" height="75" rx="10"/>
+<rect x="90" y="415" width="265" height="68" rx="10"/><rect x="385" y="415" width="194" height="68" rx="10"/><rect x="705" y="415" width="200" height="68" rx="10"/><rect x="30" y="545" width="255" height="65" rx="10"/>
+</g>
+<g font-family="Arial,sans-serif" fill="#f3f6fb" text-anchor="middle">
+<text x="440" y="93" font-weight="bold" font-size="18">Router R1</text><text x="440" y="114" font-size="15">10.7.63.1 · Fa0/0</text>
+<text x="440" y="227" font-weight="bold" font-size="18">Switch SW1</text><text x="440" y="250" font-size="15">10.7.63.2 · VLAN 1</text>
+<text x="805" y="247" font-weight="bold" font-size="18">FortiGate FG1</text><text x="805" y="269" font-size="15">port1 10.7.63.3</text><text x="805" y="287" font-size="15">port2 10.7.66.1</text>
+<text x="222" y="442" font-weight="bold" font-size="18">Cloud VMnet4</text><text x="222" y="464" font-size="15">Red compartida</text>
+<text x="482" y="442" font-weight="bold" font-size="18">PC1</text><text x="482" y="464" font-size="15">10.7.63.100</text>
+<text x="805" y="442" font-weight="bold" font-size="18">PC2 · Protegida</text><text x="805" y="464" font-size="15">10.7.66.10</text>
+<text x="158" y="572" font-weight="bold" font-size="18">Ubuntu auditor</text><text x="158" y="594" font-size="15">10.7.63.50 · ens33</text>
+</g><text x="575" y="633" font-family="Arial,sans-serif" font-size="13" fill="#a9b8d0" text-anchor="middle">El NAT temporal usado para intentar activar la licencia FortiGate se omitió del diagrama lógico.</text></svg>
