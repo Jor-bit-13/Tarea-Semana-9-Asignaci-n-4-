@@ -1,6 +1,6 @@
 # 🎥 Video demostrativo
-**YouTube:** PENDIENTE DE PUBLICAR. Colocar aquí el enlace del video (máximo 10 minutos, con fecha/hora, rostro y voz) antes de entregar.
-
+**YouTube:** [PENDIENTE DE PUBLICAR. Colocar aquí el enlace del video (máximo 10 minutos, con fecha/hora, rostro y voz) antes de entregar.
+](https://youtu.be/YNStO33xZAQ)
 # Asignación 4 · Semana 9 — Auditoría y hardening de red basado en CIS Benchmark
 
 **Institución:** ITLA · **Modalidad:** Individual · **Laboratorio:** GNS3, Ubuntu Server, Cisco IOS 12.4 y FortiOS 7.4.13.
