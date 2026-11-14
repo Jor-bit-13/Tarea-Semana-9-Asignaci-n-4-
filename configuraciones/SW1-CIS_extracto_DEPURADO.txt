@@ -1,0 +1,48 @@
+# SW1-CIS — EXTRACTO depurado del running-config visible en las capturas
+# No es una exportación completa byte a byte. El archivo completo debe exportarse desde SW1 y eliminar todos los secretos antes de publicar.
+version 12.4
+hostname SW1-CIS
+no ip routing
+no ip domain lookup
+ip domain name cis-lab.local
+!
+! enable secret 5 [HASH SUPRIMIDO]
+! username adminlab privilege 15 secret 5 [HASH SUPRIMIDO]
+!
+ip ssh time-out 60
+ip ssh version 2
+!
+interface FastEthernet1/0
+ description ENLACE-R1
+!
+interface FastEthernet1/1
+ description CLOUD-VMNET4
+!
+interface FastEthernet1/2
+ description PC1
+!
+interface FastEthernet1/3
+ description FORTIGATE-PORT1
+!
+interface Vlan1
+ ip address 10.7.63.2 255.255.255.0
+!
+ip default-gateway 10.7.63.1
+no ip http server
+no ip http secure-server
+!
+line con 0
+ exec-timeout 0 0
+ privilege level 15
+ logging synchronous
+ login local
+line aux 0
+ exec-timeout 0 0
+ privilege level 15
+ logging synchronous
+ login local
+line vty 0 4
+ login local
+ transport input ssh
+!
+end
